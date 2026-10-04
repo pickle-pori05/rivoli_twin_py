@@ -1,0 +1,10 @@
+id,name,length_m,free_speed_kmh,lanes,residential,signalised,sensor_id
+E,Entry - Concorde,300.0,40.0,2,0,0,
+A1,Rue de Rivoli - Concorde,800.0,40.0,1,0,0,S-A1
+A2,Rue de Rivoli - Tuileries,700.0,40.0,1,0,0,S-A2
+A3,Rue de Rivoli - Louvre,400.0,40.0,1,0,1,S-A3
+B1,Quai des Tuileries,1600.0,50.0,1,0,0,S-B1
+B2,Quai du Louvre,1400.0,50.0,1,0,1,S-B2
+C1,Rue Saint-Honore,1000.0,30.0,1,1,0,S-C1
+C2,Rue des Bons-Enfants,900.0,30.0,1,1,1,S-C2
+X,Exit - Chatelet,300.0,40.0,3,0,0,

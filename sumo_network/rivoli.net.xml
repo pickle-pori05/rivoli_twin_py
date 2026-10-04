@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-09-30T18:31:00.067872+00:00 by Eclipse SUMO netconvert 1.27.1
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="rivoli.nod.xml"/>
+        <edge-files value="rivoli.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="rivoli.net.xml"/>
+    </output>
+
+</netconvertConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,300.00" convBoundary="0.00,0.00,2500.00,600.00" origBoundary="0.00,-300.00,2500.00,300.00" projParameter="!"/>
+
+    <edge id=":chatelet_0" function="internal">
+        <lane id=":chatelet_0_0" index="0" speed="7.11" length="4.40" shape="2192.62,290.36 2193.49,291.08 2194.43,291.59 2195.47,291.90 2196.58,292.00"/>
+    </edge>
+    <edge id=":chatelet_1" function="internal">
+        <lane id=":chatelet_1_0" index="0" speed="11.11" length="9.13" shape="2188.22,298.40 2190.79,297.90 2192.40,296.80 2194.02,295.70 2196.58,295.20"/>
+    </edge>
+    <edge id=":chatelet_2" function="internal">
+        <lane id=":chatelet_2_0" index="0" speed="9.72" length="8.75" shape="2188.81,302.04 2191.14,300.90 2192.62,299.71 2194.13,298.78 2196.58,298.40"/>
+    </edge>
+    <edge id=":concorde_vms_0" function="internal">
+        <lane id=":concorde_vms_0_0" index="0" speed="12.50" length="25.03" shape="296.00,295.20 303.43,295.21 310.40,295.16 316.42,294.94 321.00,294.44"/>
+    </edge>
+    <edge id=":concorde_vms_1" function="internal">
+        <lane id=":concorde_vms_1_0" index="0" speed="11.11" length="25.30" shape="296.00,295.20 303.43,295.70 310.41,296.80 316.45,297.90 321.07,298.40"/>
+    </edge>
+    <edge id=":concorde_vms_2" function="internal">
+        <lane id=":concorde_vms_2_0" index="0" speed="9.72" length="19.12" shape="296.00,298.40 302.23,298.87 307.02,300.00 310.93,301.41 314.51,302.68"/>
+    </edge>
+    <edge id=":n_a1_0" function="internal">
+        <lane id=":n_a1_0_0" index="0" speed="11.11" length="0.10" shape="1100.00,298.40 1100.00,298.40"/>
+    </edge>
+    <edge id=":n_a2_0" function="internal">
+        <lane id=":n_a2_0_0" index="0" speed="11.11" length="0.10" shape="1800.00,298.40 1800.00,298.40"/>
+    </edge>
+    <edge id=":n_b1_0" function="internal">
+        <lane id=":n_b1_0_0" index="0" speed="4.06" length="1.56" shape="1899.71,-1.57 1900.11,-1.60 1900.48,-1.54 1900.82,-1.38 1901.13,-1.13"/>
+    </edge>
+    <edge id=":n_c1_0" function="internal">
+        <lane id=":n_c1_0_0" index="0" speed="8.33" length="0.99" shape="1299.49,598.18 1299.77,598.25 1299.97,598.28 1300.18,598.25 1300.46,598.16"/>
+    </edge>
+
+    <edge id="A1" from="concorde_vms" to="n_a1" priority="-1" length="800.00">
+        <lane id="A1_0" index="0" speed="11.11" length="800.00" shape="321.07,298.40 1100.00,298.40"/>
+    </edge>
+    <edge id="A2" from="n_a1" to="n_a2" priority="-1" length="700.00">
+        <lane id="A2_0" index="0" speed="11.11" length="700.00" shape="1100.00,298.40 1800.00,298.40"/>
+    </edge>
+    <edge id="A3" from="n_a2" to="chatelet" priority="-1" length="400.00">
+        <lane id="A3_0" index="0" speed="11.11" length="400.00" shape="1800.00,298.40 2188.22,298.40"/>
+    </edge>
+    <edge id="B1" from="concorde_vms" to="n_b1" priority="-1" length="1600.00">
+        <lane id="B1_0" index="0" speed="13.89" length="1600.00" shape="321.00,294.44 1899.71,-1.57"/>
+    </edge>
+    <edge id="B2" from="n_b1" to="chatelet" priority="-1" length="1400.00">
+        <lane id="B2_0" index="0" speed="13.89" length="1400.00" shape="1901.13,-1.13 2192.62,290.36"/>
+    </edge>
+    <edge id="C1" from="concorde_vms" to="n_c1" priority="-1" length="1000.00">
+        <lane id="C1_0" index="0" speed="8.33" length="1000.00" shape="314.51,302.68 1299.49,598.18"/>
+    </edge>
+    <edge id="C2" from="n_c1" to="chatelet" priority="-1" length="900.00">
+        <lane id="C2_0" index="0" speed="8.33" length="900.00" shape="1300.46,598.16 2188.81,302.04"/>
+    </edge>
+    <edge id="E" from="start" to="concorde_vms" priority="-1" length="300.00">
+        <lane id="E_0" index="0" speed="11.11" length="300.00" shape="0.00,295.20 296.00,295.20"/>
+        <lane id="E_1" index="1" speed="11.11" length="300.00" shape="0.00,298.40 296.00,298.40"/>
+    </edge>
+    <edge id="X" from="chatelet" to="end" priority="-1" length="300.00">
+        <lane id="X_0" index="0" speed="11.11" length="300.00" shape="2196.58,292.00 2500.00,292.00"/>
+        <lane id="X_1" index="1" speed="11.11" length="300.00" shape="2196.58,295.20 2500.00,295.20"/>
+        <lane id="X_2" index="2" speed="11.11" length="300.00" shape="2196.58,298.40 2500.00,298.40"/>
+    </edge>
+
+    <tlLogic id="chatelet" type="static" programID="0" offset="0">
+        <phase duration="90" state="GGG"/>
+    </tlLogic>
+
+    <junction id="chatelet" type="traffic_light" x="2200.00" y="300.00" incLanes="B2_0 A3_0 C2_0" intLanes=":chatelet_0_0 :chatelet_1_0 :chatelet_2_0" shape="2196.58,300.00 2196.58,290.40 2195.41,290.34 2195.00,290.22 2194.63,290.01 2194.23,289.69 2193.75,289.23 2191.49,291.49 2192.88,293.11 2193.49,294.44 2193.33,295.47 2192.40,296.21 2190.70,296.65 2188.22,296.80 2188.22,300.00 2188.31,300.52 2189.32,303.56 2192.01,302.07 2192.87,301.30 2193.76,300.64 2194.91,300.17">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="concorde_vms" type="priority" x="300.00" y="300.00" incLanes="E_0 E_1" intLanes=":concorde_vms_0_0 :concorde_vms_1_0 :concorde_vms_2_0" shape="314.05,304.21 314.97,301.15 313.94,300.51 314.58,300.29 315.98,300.13 318.14,300.03 321.07,300.00 321.07,296.80 321.29,296.01 320.70,292.86 315.51,293.71 311.65,294.07 308.43,294.09 305.20,293.91 301.28,293.70 296.00,293.60 296.00,300.00 299.94,300.13 302.83,300.50 305.17,301.11 307.48,301.94 310.27,302.98">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="end" type="dead_end" x="2500.00" y="300.00" incLanes="X_0 X_1 X_2" intLanes="" shape="2500.00,290.40 2500.00,300.00"/>
+    <junction id="n_a1" type="priority" x="1100.00" y="300.00" incLanes="A1_0" intLanes=":n_a1_0_0" shape="1100.00,300.00 1100.00,296.80 1100.00,300.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_a2" type="priority" x="1800.00" y="300.00" incLanes="A2_0" intLanes=":n_a2_0_0" shape="1800.00,300.00 1800.00,296.80 1800.00,300.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_b1" type="priority" x="1900.00" y="0.00" incLanes="B1_0" intLanes=":n_b1_0_0" shape="1900.00,0.00 1902.26,-2.26 1901.42,-2.89 1900.95,-3.08 1900.46,-3.19 1899.95,-3.21 1899.41,-3.15">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="n_c1" type="priority" x="1300.00" y="600.00" incLanes="C1_0" intLanes=":n_c1_0_0" shape="1300.96,599.68 1299.95,596.64 1299.03,599.71 1299.74,599.89 1300.00,599.91 1300.26,599.88 1300.56,599.81">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="start" type="dead_end" x="0.00" y="300.00" incLanes="" intLanes="" shape="0.00,300.00 0.00,293.60"/>
+
+    <connection from="A1" to="A2" fromLane="0" toLane="0" via=":n_a1_0_0" dir="s" state="M"/>
+    <connection from="A2" to="A3" fromLane="0" toLane="0" via=":n_a2_0_0" dir="s" state="M"/>
+    <connection from="A3" to="X" fromLane="0" toLane="1" via=":chatelet_1_0" tl="chatelet" linkIndex="1" dir="s" state="O"/>
+    <connection from="B1" to="B2" fromLane="0" toLane="0" via=":n_b1_0_0" dir="l" state="M"/>
+    <connection from="B2" to="X" fromLane="0" toLane="0" via=":chatelet_0_0" tl="chatelet" linkIndex="0" dir="r" state="O"/>
+    <connection from="C1" to="C2" fromLane="0" toLane="0" via=":n_c1_0_0" dir="s" state="M"/>
+    <connection from="C2" to="X" fromLane="0" toLane="2" via=":chatelet_2_0" tl="chatelet" linkIndex="2" dir="s" state="O"/>
+    <connection from="E" to="B1" fromLane="0" toLane="0" via=":concorde_vms_0_0" dir="R" state="M"/>
+    <connection from="E" to="A1" fromLane="0" toLane="0" via=":concorde_vms_1_0" dir="s" state="M"/>
+    <connection from="E" to="C1" fromLane="1" toLane="0" via=":concorde_vms_2_0" dir="L" state="M"/>
+
+    <connection from=":chatelet_0" to="X" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":chatelet_1" to="X" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":chatelet_2" to="X" fromLane="0" toLane="2" dir="s" state="M"/>
+    <connection from=":concorde_vms_0" to="B1" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":concorde_vms_1" to="A1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":concorde_vms_2" to="C1" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":n_a1_0" to="A2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_a2_0" to="A3" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":n_b1_0" to="B2" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":n_c1_0" to="C2" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>

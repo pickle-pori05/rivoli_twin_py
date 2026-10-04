@@ -1,0 +1,4 @@
+segment_id,cycle_s,base_green_s,offset_s,pedestrian_min_s
+A3,90,40,0,6
+B2,90,45,30,6
+C2,90,36,60,6

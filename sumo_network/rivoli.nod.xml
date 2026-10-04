@@ -1,0 +1,23 @@
+<nodes>
+    <!-- Point d'entrée global -->
+    <node id="start" x="0" y="0" type="priority"/>
+    
+    <!-- Embranchement avec le panneau VMS (Place de la Concorde) -->
+    <node id="concorde_vms" x="300" y="0" type="priority"/>
+    
+    <!-- Nœuds intermédiaires Route A (Rivoli - Centre) -->
+    <node id="n_a1" x="1100" y="0" type="priority"/>
+    <node id="n_a2" x="1800" y="0" type="priority"/>
+    
+    <!-- Nœuds intermédiaires Route B (Quais - Sud) -->
+    <node id="n_b1" x="1900" y="-300" type="priority"/>
+    
+    <!-- Nœuds intermédiaires Route C (St-Honoré - Nord) -->
+    <node id="n_c1" x="1300" y="300" type="priority"/>
+    
+    <!-- Point de jonction commun (Châtelet) -->
+    <node id="chatelet" x="2200" y="0" type="traffic_light"/>
+    
+    <!-- Point de sortie global -->
+    <node id="end" x="2500" y="0" type="priority"/>
+</nodes>

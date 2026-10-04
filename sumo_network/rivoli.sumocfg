@@ -1,0 +1,11 @@
+<configuration>
+    <input>
+        <net-file value="rivoli.net.xml"/>
+        <route-files value="rivoli.rou.xml"/>
+        <additional-files value="rivoli.add.xml"/>
+    </input>
+    <time>
+        <begin value="50400"/> <!-- 14:00 -->
+        <end value="64800"/>   <!-- 18:00 -->
+    </time>
+</configuration>

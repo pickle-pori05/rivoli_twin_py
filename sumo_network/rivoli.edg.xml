@@ -1,0 +1,21 @@
+<edges>
+    <!-- Lengths are set explicitly so that SUMO matches the Road Network Model of the twin (config.py) -->
+    <!-- Tronçon d'entrée commun -->
+    <edge id="E" from="start" to="concorde_vms" speed="11.11" numLanes="2" length="300" /> <!-- 40km/h -->
+
+    <!-- Route A : Rivoli -->
+    <edge id="A1" from="concorde_vms" to="n_a1" speed="11.11" numLanes="1" length="800" />
+    <edge id="A2" from="n_a1" to="n_a2" speed="11.11" numLanes="1" length="700" />
+    <edge id="A3" from="n_a2" to="chatelet" speed="11.11" numLanes="1" length="400" />
+
+    <!-- Route B : Quais -->
+    <edge id="B1" from="concorde_vms" to="n_b1" speed="13.89" numLanes="1" length="1600" /> <!-- 50km/h -->
+    <edge id="B2" from="n_b1" to="chatelet" speed="13.89" numLanes="1" length="1400" />
+
+    <!-- Route C : Saint-Honoré -->
+    <edge id="C1" from="concorde_vms" to="n_c1" speed="8.33" numLanes="1" length="1000" /> <!-- 30km/h -->
+    <edge id="C2" from="n_c1" to="chatelet" speed="8.33" numLanes="1" length="900" />
+
+    <!-- Tronçon de sortie commun -->
+    <edge id="X" from="chatelet" to="end" speed="11.11" numLanes="3" length="300" />
+</edges>

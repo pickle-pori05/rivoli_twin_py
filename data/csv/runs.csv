@@ -1,0 +1,8 @@
+run_id,label,controlled,seed,residential_sens,inferred_confidence,compliance,events,created_at
+1,Baseline (No VMS Control),0,7,,0.6,0.7,,2026-09-30T18:34:43
+2,VMS Controlled - Low Residential Penalty,1,7,low,0.6,0.7,,2026-09-30T18:34:49
+3,VMS Controlled - Medium Residential Penalty,1,7,medium,0.6,0.7,,2026-09-30T18:34:55
+4,VMS Controlled - High Residential Penalty,1,7,high,0.6,0.7,,2026-09-30T18:35:01
+5,VMS Controlled - Medium - Sensor A2 offline 15:30-16:10,1,7,medium,0.6,0.7,S-A2 offline 15:30-16:10,2026-09-30T18:35:07
+6,Baseline (No VMS Control) - Surge 15:00-15:20,0,7,,0.6,0.7,surge 15:00-15:20 x1.45,2026-09-30T18:35:14
+7,VMS Controlled - Medium - Surge 15:00-15:20,1,7,medium,0.6,0.7,surge 15:00-15:20 x1.45,2026-09-30T18:35:21

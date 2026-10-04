@@ -1,0 +1,6 @@
+<additional>
+    <!-- Detectors for traffic light queues -->
+    <laneAreaDetector id="det_A3" lane="A3_0" pos="0" endPos="-1" freq="60" file="det_A3.xml"/>
+    <laneAreaDetector id="det_B2" lane="B2_0" pos="0" endPos="-1" freq="60" file="det_B2.xml"/>
+    <laneAreaDetector id="det_C2" lane="C2_0" pos="0" endPos="-1" freq="60" file="det_C2.xml"/>
+</additional>

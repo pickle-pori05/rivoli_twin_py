@@ -1,0 +1,13 @@
+<routes>
+    <!-- Définition des types de véhicules -->
+    <vType id="car" accel="2.0" decel="4.5" sigma="0.5" length="5.0" maxSpeed="13.89"/>
+
+    <!-- Les 3 routes possibles depuis Concorde vers Chatelet -->
+    <route id="corridor_A" edges="E A1 A2 A3 X"/>
+    <route id="corridor_B" edges="E B1 B2 X"/>
+    <route id="corridor_C" edges="E C1 C2 X"/>
+    
+    <!-- Routes locales pour le bruit de fond -->
+    <route id="local_B" edges="B1 B2 X"/>
+    <route id="local_C" edges="C1 C2 X"/>
+</routes>
